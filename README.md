@@ -5,25 +5,25 @@
 First, install dependencies:
 
 ```sh
-npm i
+bun i
 ```
 
 Next, run docker:
 
 ```sh
-npm run dev:db-up
+bun run dev:db-up
 ```
 
 **In a second terminal**, run the zero cache server:
 
 ```sh
-npm run dev:zero-cache
+bun run dev:zero-cache
 ```
 
 **In a third terminal**, run the Vite dev server:
 
 ```sh
-npm run dev:ui
+bun run dev:ui
 ```
 
 ## Option 2: Install Zero in your own project
@@ -71,7 +71,7 @@ VITE_PUBLIC_SERVER=http://localhost:4848
 1. **Install Zero**
 
 ```bash
-npm install @rocicorp/zero
+bun install @rocicorp/zero
 ```
 
 2. **Create Schema** Define your database schema using Zero's schema builder.
@@ -169,7 +169,7 @@ If you are using Docker (referencing the example in
 [docker](docker/docker-compose.yml)), run:
 
 ```bash
-npm run docker-up
+bun run docker-up
 ```
 
 **2. Start the zero cache server (in a separate terminal):**
@@ -181,5 +181,5 @@ npx zero-cache
 **3. Start your React dev server**
 
 ```bash
-npm run dev # this depends on your react app setup
+bun run dev # this depends on your react app setup
 ```
